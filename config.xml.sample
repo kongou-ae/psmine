@@ -5,6 +5,6 @@
 	<rmId>
 		<open>オープンする時のステータスID</open>
 		<start>着手する時のステータスID</start>
-		<open>完了する時のステータスID</end>
+		<close>完了する時のステータスID</close>
 	</rmId>
 </config>
