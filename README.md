@@ -8,7 +8,7 @@ Powershell‚ÅRedmine‚ğ‘€ì‚·‚é‚½‚ß‚ÌƒXƒNƒŠƒvƒg‚Å‚·BˆÈ‰º‚Ìì‹Æ‚ğPowershellƒvƒƒ“ƒ
 
 ##g‚¢•û
 ###ƒ`ƒPƒbƒgˆê——‚ğŠm”F‚·‚é
-	psmine.ps1 show
+psmine.ps1 show ƒRƒ}ƒ“ƒh‚ğg‚¢‚Ü‚·B
 	> .\psmine.ps1 show
 	
 	
@@ -23,7 +23,7 @@ Powershell‚ÅRedmine‚ğ‘€ì‚·‚é‚½‚ß‚ÌƒXƒNƒŠƒvƒg‚Å‚·BˆÈ‰º‚Ìì‹Æ‚ğPowershellƒvƒƒ“ƒ
 	status  : V‹K
 
 ###“Á’è‚Ìƒ`ƒPƒbƒg‚ÌÚ×‚ğŠm”F‚·‚éB
-	psmine.ps1 show id {number}
+psmine.ps1 show id {number}@‚ğƒRƒ}ƒ“ƒh‚ğg‚¢‚Ü‚·B
 	> .\psmine.ps1 show id 44
 	>> Ticket Summary
 
@@ -44,12 +44,12 @@ Powershell‚ÅRedmine‚ğ‘€ì‚·‚é‚½‚ß‚ÌƒXƒNƒŠƒvƒg‚Å‚·BˆÈ‰º‚Ìì‹Æ‚ğPowershellƒvƒƒ“ƒ
 	2014-03-11T07:59:28Z                                             kongou-ae                                                •Ÿ_’Ğ‚¯                                                           
 	2014-03-13T06:34:17Z                                             kongou-ae                                                             
 ###ƒ`ƒPƒbƒg‚Ì—š—ğ‚ğXV‚·‚é
-	psmine.ps1 update id {number} {note}
+psmine.ps1 update id {number} {note}@‚ğƒRƒ}ƒ“ƒh‚ğg‚¢‚Ü‚·B
 	> .\psmine.ps1 update id 45 ƒxƒ“ƒ_[‚Ö‚Ì–â‚¢‡‚í‚¹‚ğÀ{‚µ‚½B
 	XV‚ª¬Œ÷‚µ‚Ü‚µ‚½
 
 ###ƒ`ƒPƒbƒg‚ÌƒXƒe[ƒ^ƒX‚ğXV‚·‚éB
-	psmine.ps1 change id {number} {open|start|close}
+psmine.ps1 change id {number} {open|start|close}@‚ğƒRƒ}ƒ“ƒh‚ğg‚¢‚Ü‚·B
 	> .\psmine.ps1 change id 45 close
 	XV‚ª¬Œ÷‚µ‚Ü‚µ‚½
 
