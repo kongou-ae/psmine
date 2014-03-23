@@ -1,12 +1,10 @@
 # redmine_cli
-パワーシェルでRedmineを操作するためのスクリプトです。以下の作業をPowershellプロンプトから実施できるようになります。  
+PowershellでRedmineを操作するためのスクリプトです。以下の作業をPowershellプロンプトから実施できるようになります。  
 - チケット一覧の表示  
 - チケットの詳細表示  
 - チケットの登録  
 - チケットの更新（履歴更新）  
 - チケットの更新（ステータス変更）     
-
-
 
 ##使い方
 ###チケット一覧を確認する
@@ -18,8 +16,7 @@
 	rm_cli.ps1 update id {number} {note}
 
 ###チケットのステータスを更新する。
-	rm_cli.ps1 update id {number} {open|start|close}
-
+	rm_cli.ps1 change id {number} {open|start|close}
 
 
 ## 事前準備
