@@ -1,4 +1,4 @@
-# redmine_cli
+# PSmine (PowerShell for Redmine )
 Powershell‚ÅRedmine‚ð‘€ì‚·‚é‚½‚ß‚ÌƒXƒNƒŠƒvƒg‚Å‚·BˆÈ‰º‚Ìì‹Æ‚ðPowershellƒvƒƒ“ƒvƒg‚©‚çŽÀŽ{‚Å‚«‚é‚æ‚¤‚É‚È‚è‚Ü‚·B  
 - ƒ`ƒPƒbƒgˆê——‚Ì•\Ž¦  
 - ƒ`ƒPƒbƒg‚ÌÚ×•\Ž¦  
@@ -8,17 +8,51 @@ Powershell‚ÅRedmine‚ð‘€ì‚·‚é‚½‚ß‚ÌƒXƒNƒŠƒvƒg‚Å‚·BˆÈ‰º‚Ìì‹Æ‚ðPowershellƒvƒƒ“ƒ
 
 ##Žg‚¢•û
 ###ƒ`ƒPƒbƒgˆê——‚ðŠm”F‚·‚é
-	rm_cli.ps1 show
+	psmine.ps1 show
+	> .\psmine.ps1 show
+	
+	
+	ID      : 50
+	project : tech
+	subject : kibana3 elasticseach‚ðƒŠƒoƒvƒŒo—R‚É‚·‚éB
+	status  : V‹K
+
+	ID      : 49
+	project : tech
+	subject : kibana3 ƒ_ƒbƒVƒ…ƒ{[ƒh‚É•\Ž¦‚³‚ê‚éƒf[ƒ^‚ð‹@Ší‚²‚Æ‚ÉŒÀ’è‚·‚éB
+	status  : V‹K
 
 ###“Á’è‚Ìƒ`ƒPƒbƒg‚ÌÚ×‚ðŠm”F‚·‚éB
-	rm_cli.ps1 show id {number}  
+	psmine.ps1 show id {number}
+	> .\psmine.ps1 show id 44
+	>> Ticket Summary
+
+	ID      : 44
+	PROJECT : home
+	STATUS  : I—¹
+	TITLE   : ‰Å‚Ì‚¨Žg‚¢
+	
+	
+	
+	>> Ticket Detail
+	
+	
+	created_on                                                       name                                                     notes                                                          
+	----------                                                       ----                                                     -----                                                          
+	2014-03-10T15:36:19Z                                             kongou-ae                                                ‚½‚Ü‚²‚à”ƒ‚¤                                                         
+	2014-03-11T07:51:29Z                                             kongou-ae                                                ‚­‚è[‚Þ‚Á‚Û‚¢‚²‚ÜƒhƒŒƒbƒVƒ“ƒO‚à”ƒ‚¤                                             
+	2014-03-11T07:59:28Z                                             kongou-ae                                                •Ÿ_’Ð‚¯                                                           
+	2014-03-13T06:34:17Z                                             kongou-ae                                                             
 ###ƒ`ƒPƒbƒg‚Ì—š—ð‚ðXV‚·‚é
-	rm_cli.ps1 update id {number} {note}
+	psmine.ps1 update id {number} {note}
+	> .\psmine.ps1 update id 45 ƒxƒ“ƒ_[‚Ö‚Ì–â‚¢‡‚í‚¹‚ðŽÀŽ{‚µ‚½B
+	XV‚ª¬Œ÷‚µ‚Ü‚µ‚½
 
 ###ƒ`ƒPƒbƒg‚ÌƒXƒe[ƒ^ƒX‚ðXV‚·‚éB
-	rm_cli.ps1 change id {number} {open|start|close}
-
+	psmine.ps1 change id {number} {open|start|close}
+	> .\psmine.ps1 change id 45 close
+	XV‚ª¬Œ÷‚µ‚Ü‚µ‚½
 
 ## Ž–‘O€”õ
 1. config.xml.sample‚ðŽQ‚É‚µ‚ÄAconfig.xml‚ðì¬‚µ‚Ü‚·Bƒ†[ƒUID‚ÍARedmine‚Ì‰æ–Ê‰Eã‚É•\Ž¦‚³‚ê‚Ä‚¢‚éƒAƒJƒEƒ“ƒg–¼‚ÌƒŠƒ“ƒNæURL‚Ì––”ö‚É‹LÚ‚³‚ê‚Ä‚¢‚é”Žš‚Å‚·BrmId‚ÍŽŸ‚ÌƒXƒeƒbƒv‚ÅŠm”F‚µ‚Ü‚·B  
-2. rm_cli.ps1 show‚ðŽÀs‚µ‚Ä‚¨Žg‚¢‚ÌRedmine‚É‚¨‚¯‚éƒXƒe[ƒ^ƒXID‚ðŠm”F‚µ‚Ü‚·B•\Ž¦Œ‹‰Ê‚©‚çA‚¨Žg‚¢‚ÌŠÂ‹«‚Åopen/start/close‚Éƒ}ƒbƒ`‚·‚éIDi”Žšj‚ðconfig.xml‚É“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B  
+2. psmine.ps1 show‚ðŽÀs‚µ‚Ä‚¨Žg‚¢‚ÌRedmine‚É‚¨‚¯‚éƒXƒe[ƒ^ƒXID‚ðŠm”F‚µ‚Ü‚·B•\Ž¦Œ‹‰Ê‚©‚çA‚¨Žg‚¢‚ÌŠÂ‹«‚Åopen/start/close‚Éƒ}ƒbƒ`‚·‚éIDi”Žšj‚ðconfig.xml‚É“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B  
