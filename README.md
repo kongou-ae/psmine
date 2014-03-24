@@ -49,12 +49,21 @@ psmine.ps1 update id {number} {note}　をコマンドを使います。
 
 	> .\psmine.ps1 update id 45 ベンダーへの問い合わせを実施した。
 	更新が成功しました
+	（更新後のチケット詳細が表示される）
 
 ###チケットのステータスを更新する。
 psmine.ps1 change id {number} {open|start|close}　をコマンドを使います。  
 
 	> .\psmine.ps1 change id 45 close
 	更新が成功しました
+	（更新後のチケット詳細が表示される）
+
+###チケットのステータスを新規作成する。
+psmine.ps1 add {title} {description}　をコマンドを使います。  
+
+	> .\psmine.ps1 add title description
+	チケットの追加が成功しました
+	（追加したチケットの詳細が表示される）	
 
 ## 事前準備
 ###1．基本設定

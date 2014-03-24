@@ -2,6 +2,7 @@
 	<apiKey>APIキー</apiKey>
 	<rmUrl>RedmineサーバのURL</rmUrl>
 	<rmAssign>あなたのユーザID（数字）</rmAssign>
+	<rmProject>PSmineでチケットを登録するプロジェクトのID</rmProject>
 	<rmId>
 		<open>オープンする時のステータスID</open>
 		<start>着手する時のステータスID</start>
