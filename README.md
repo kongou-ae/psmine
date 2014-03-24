@@ -31,9 +31,8 @@ psmine.ps1 show id {number}　をコマンドを使います。
 
 	ID      : 44
 	PROJECT : home
-	STATUS  : 終了
 	TITLE   : 嫁のお使い
-	
+	STATUS  : 終了	
 	
 	
 	>> Ticket Detail
